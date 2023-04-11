@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-mongo-pacman-zyzp
+  namespace: user1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/user-workload@sha256:eda9f7d71e3be55db28fa5eedc4147ace547d35c5fae1f3c29534fae1b10e590
+        name: container-image
+        resources: {}
+status: {}
