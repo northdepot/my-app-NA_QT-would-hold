@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: mongo-mongo-pacman-o7tz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: mongo-mongo-pacman-o7tz
+    app.kubernetes.io/part-of: my-app
+  name: mongo-mongo-pacman-o7tz
+  namespace: user1-tenant
+spec:
+  ports:
+  - port: 27017
+    targetPort: 27017
+  selector:
+    app.kubernetes.io/instance: mongo-mongo-pacman-o7tz
+status:
+  loadBalancer: {}
