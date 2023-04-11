@@ -25,7 +25,7 @@ spec:
       containers:
       - env:
         - name: MONGO_SERVICE_HOST
-        image: quay.io/jduimovich0/user-workload:NA_QT-frontend-mongo-pacman-zyzp
+        image: quay.io/jduimovich0/user-workload@sha256:eda9f7d71e3be55db28fa5eedc4147ace547d35c5fae1f3c29534fae1b10e590
         imagePullPolicy: Always
         name: container-image
         ports:
